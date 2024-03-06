@@ -1,2 +1,2 @@
 docker/db/data
-docker/ssl_cert
+docker/ssl_certs/*

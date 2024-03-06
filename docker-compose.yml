@@ -72,7 +72,3 @@ services:
 
   adminer:
     image: adminer
-
-networks:
-  shared-network:
-    external: true
