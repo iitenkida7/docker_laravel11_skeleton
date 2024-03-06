@@ -25,7 +25,7 @@ docker-compose build #--pull --no-cache
 mkdir laravel
 docker-compose run --rm laravel composer create-project --prefer-dist laravel/laravel laravel-dev dev-master
 mv laravel laravel_ && mv laravel_/laravel-dev laravel
-make init
+make up
 #Clean
 rm -rf .git install.sh laravel_ || true
 
