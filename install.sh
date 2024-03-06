@@ -15,8 +15,8 @@ cd ${INSTALL_DIR}
 git clone git@github.com:iitenkida7/docker_laravel11_skeleton.git .
 
 #Build docker-compose.yml
-sed -i "s/__UID__/$(id -u)/g" docker-compose.yml
-sed -i "s/__GID__/$(id -g)/g" docker-compose.yml
+sed -i "" "s/__UID__/$(id -u)/g" docker-compose.yml
+sed -i "" "s/__GID__/$(id -g)/g" docker-compose.yml
 
 #Build container
 docker-compose build #--pull --no-cache
